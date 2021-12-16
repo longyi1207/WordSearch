@@ -1,0 +1,34 @@
+#board{
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+    box-shadow: 3px 3px 3px 3px #000;
+    float:left
+}
+
+#panel{
+    float:right;
+}
+
+.letter{
+    /* border:solid; */
+    font-size: 40px;
+    text-align: center;
+}
+
+.shadow{
+    box-shadow: 3px 3px 3px 3px #000
+}
+
+.highlight{
+    background-color: yellow ;
+}
+
+.grey {
+    background-color: lightgrey ;
+  }
+
+/* 
+.selected{
+
+} */

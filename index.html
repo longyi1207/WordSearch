@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="styles.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <h1 style="text-align: center;">
+        Word Master
+    </h1>
+</head>
+
+
+<body style="margin-right: 50px; margin-left: 50px;">
+    <span>
+        <table id="board" style="border:solid">
+        </table>
+    <div id="panel">
+        <h2 >
+            Your score: <span id="playerScore"></span>
+        </h2>
+        <h2>
+            Opponent score: <span id="opponentScore"></span>
+        </h2>
+        <div style="font-size: 20px">
+            <label for="level">Select Computer Level:</label>
+            <select id="level">
+            <option value="beginer">BEGINER </option>
+            <option value="normal">NORMAL </option>
+            <option value="master">MASTER </option>
+            </select>
+            <button id="level-btn"> Refresh and Go </button>
+        </div>
+        <br>
+        <div style="font-size: 20px;">
+            <label for="boardsize">Select Board size:</label>
+            <input id="boardsize" type="number" placeholder="10 to 30">
+            <button id="boardsize-btn"> Refresh and Go </button>
+        </div>
+        <br>
+        <textarea id="log" style="font-size: 20px;height:300px;width: 300px;" placeholder="        Game Log" readonly></textarea>
+        <br><br>
+        <Button id="newgame-btn" > New Game</Button>
+        <Button id="allwords-btn" > See Computer Results</Button>
+    </div>
+    </span>
+
+
+    
+
+    <script src="script.js"></script>
+
+    <script >
+        var size=10
+        var level = "beginer"
+        var first_click=""
+
+        var easy_words = readFile("corpus/1000.txt")
+        var medium_words = readFile("corpus/3000.txt")
+        var hard_words = readFile("corpus/5000.txt")
+        var all_words_str = easy_words+hard_words+medium_words
+        var all_words = all_words_str.split("\n")
+        
+        var answer =[]
+        var found = []
+
+        $(document).ready(function() {
+            renderBoard()
+            panelSetting()
+            searchWord()
+            userPlay()     
+        });
+    </script>
+</body>
+</html>
+
