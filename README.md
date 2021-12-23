@@ -11,3 +11,6 @@ after you found a word in the board, first click on the first or last letter of 
 The computer will compete with you.
 You can change some settings on the right panel.
 Author Hint: Due to all letters are created randomly, there are not really many words more than 3 letters, please pay more attention to short words, like hi, is, it, he ....
+
+
+![alt text](https://github.com/longyi1207/WordSearch/blob/main/image.jpg?raw=true)
