@@ -15,6 +15,7 @@ function renderBoard(){
 
 // computer search words in corpus
 function searchWord(){
+    answer = []
     direction = [[1,1],[1,0],[0,1],[1,-1]]
     var words_str = []
     if (level=="beginer"){
