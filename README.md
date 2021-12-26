@@ -15,3 +15,6 @@ Author Hint: Due to all letters are created randomly, there are not really many 
 
 SCREENSHOT:
 ![alt text](https://github.com/longyi1207/WordSearch/blob/main/screenshot.jpg?raw=true)
+
+VIDEO:
+https://www.youtube.com/watch?v=yBceqF1AtyU&t=5s
